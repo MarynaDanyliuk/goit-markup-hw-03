@@ -78,10 +78,6 @@ margin-top: 24px; */
   color: var(--logo-white-txt);
 }
 
-/*  margin-right: 93px;
-height: 31px;
- margin-top: 24px; */
-
 /* Site nav */
 
 .site-nav,
@@ -121,15 +117,28 @@ height: 31px;
 
 .hero {
   background-color: var(--accent-bg-color);
+  outline: 1px solid red;
+  text-align: center;
 }
 .hero-title {
   color: var(--hero-txt-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Container */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid blue;
 }
 
 /* Section */
@@ -140,6 +149,7 @@ height: 31px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-top: 0;
 }
 
 /* Features */
@@ -150,10 +160,17 @@ height: 31px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+  background-color: tomato;
 }
 
 .features-list .description {
   color: var(--primary-txt-color);
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 94px;
+  background-color: yellowgreen;
 }
 
 .features-list,
@@ -164,6 +181,8 @@ height: 31px;
 .filter,
 .portfolio-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Team */
@@ -220,6 +239,9 @@ height: 31px;
 .button {
   cursor: pointer;
   font-family: inherit;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid transparent;
 }
 
 .button.primary {
@@ -229,6 +251,9 @@ height: 31px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button.primary:hover .button.primary:focus {
@@ -243,17 +268,21 @@ height: 31px;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
+  height: 38px;
 }
 
 .button.secondary:hover,
 .button.secondary:focus {
   color: var(--button-txt-color);
   background-color: var(--button-filter-bg-act-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Portfolio */
 
-.container {
+.section.portfolio {
   background-color: var(--primary-bg-color);
 }
 
