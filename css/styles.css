@@ -27,7 +27,6 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -201,6 +200,10 @@ height: 31px;
 }
 .contacts-nav .cont-nav-footer {
   color: var(--address-txt-contacts);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .cont-nav-footer:hover,
