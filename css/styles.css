@@ -30,6 +30,15 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* #212121 цвет заголовков */
 /* #757575 цвет основного текста */
 /* #FFFFFF цвет Hero */
@@ -115,11 +124,10 @@ margin-top: 24px; */
 
 /* Hero */
 
-.hero {
+.hero-section {
   background-color: var(--accent-bg-color);
   outline: 1px solid red;
   text-align: center;
-  margin-bottom: 94px;
 }
 .hero-title {
   color: var(--hero-txt-color);
@@ -144,6 +152,17 @@ margin-top: 24px; */
 
 /* Section */
 
+.section {
+  margin-top: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-paddind {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .section-title {
   color: var(--title-txt-color);
   font-weight: 700;
@@ -151,11 +170,10 @@ margin-top: 24px; */
   line-height: 1.16;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 50px;
 }
 
-.section {
-  margin-top: 0;
-  margin-bottom: 94px;
+.item {
 }
 
 /* Features */
@@ -175,7 +193,6 @@ margin-top: 24px; */
   color: var(--primary-txt-color);
   line-height: 1.71;
   margin-top: 0;
-  background-color: yellowgreen;
 }
 
 .features-list,
