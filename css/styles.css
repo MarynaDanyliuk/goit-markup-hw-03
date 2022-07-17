@@ -52,6 +52,8 @@ ul {
 /* #2196F3 цвет акцент - кнопки при hover и focus */
 /* #F5F4FA цвет кнопки фильтра в дефолтном состоянии */
 
+/* Utilits */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -63,6 +65,18 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.features-list,
+.team-list,
+.projects-list,
+.site-nav,
+.contacts-nav,
+.filter,
+.portfolio-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Header */
@@ -92,9 +106,27 @@ ul {
 
 /* Site nav */
 
+.container.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
+
+.contacts-nav {
+  margin-left: auto;
+}
+
+.contacts-nav .cont-nav-header + .cont-nav-header {
+  margin-left: 50px;
+}
+
+/* .cont-nav-header .link + .link {
+  margin-left: 50px;
+} */
 
 /* .site-nav .item {
   margin-right: 50px;
@@ -112,8 +144,8 @@ ul {
 }
 
 .link,
-.cont-nav-footer,
-.cont-nav-header {
+.cont-nav-header,
+.cont-nav-footer {
   text-decoration: none;
 }
 
@@ -135,6 +167,10 @@ ul {
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
   color: var(--accent-txt-color);
+}
+
+.contacts-nav {
+  display: flex;
 }
 
 /* Hero */
@@ -193,9 +229,6 @@ ul {
   text-align: center;
 }
 
-.item {
-}
-
 /* Features */
 
 .features-list .title {
@@ -218,15 +251,14 @@ ul {
 }
 
 .features-list,
-.team-list,
 .projects-list,
-.site-nav,
-.contacts-nav,
-.filter,
-.portfolio-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-item {
+  width: 270px;
 }
 
 /* Team */
@@ -329,6 +361,19 @@ ul {
 
 .section.portfolio {
   background-color: var(--primary-bg-color);
+}
+
+.container.portfolio {
+}
+
+.filter {
+  display: flex;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .portfolio-list .title {
