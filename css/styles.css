@@ -33,10 +33,22 @@ body {
 h1,
 h2,
 h3,
-p,
-ul {
+h4,
+h5,
+h6,
+p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
 }
 
 /* #212121 цвет заголовков */
@@ -67,7 +79,7 @@ ul {
   overflow: hidden;
 }
 
-.features-list,
+/* .features-list,
 .team-list,
 .projects-list,
 .site-nav,
@@ -77,7 +89,7 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
+} */
 
 /* Header */
 
@@ -94,6 +106,7 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: inline-block;
 }
 
 .logo.black {
@@ -106,9 +119,11 @@ ul {
 
 /* Site nav */
 
-.container.header-nav {
+.page-header .container {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .site-nav {
@@ -117,6 +132,7 @@ ul {
 }
 
 .contacts-nav {
+  display: flex;
   margin-left: auto;
 }
 
@@ -147,6 +163,8 @@ ul {
 .cont-nav-header,
 .cont-nav-footer {
   text-decoration: none;
+  display: inline-block;
+  /* padding: 15px 0; */
 }
 
 .site-nav .link {
@@ -169,10 +187,6 @@ ul {
   color: var(--accent-txt-color);
 }
 
-.contacts-nav {
-  display: flex;
-}
-
 /* Hero */
 
 .hero-section {
@@ -193,6 +207,11 @@ ul {
   text-transform: uppercase;
 }
 
+.hero-section .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 /* Container */
 
 .container {
@@ -202,10 +221,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid blue;
-}
-
-.picture {
-  display: block;
 }
 
 /* Section */
@@ -243,7 +258,6 @@ ul {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
-  background-color: tomato;
 }
 
 .features-list .description {
@@ -297,6 +311,12 @@ ul {
 .page-footer {
   background-color: var(--accent-bg-color);
 }
+
+.page-footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .contacts-nav .cont-nav-footer {
   color: var(--address-txt-contacts);
   font-weight: 400;
@@ -324,6 +344,7 @@ ul {
   text-align: center;
   border: none;
   border-color: transparent;
+  display: block;
 }
 
 .button.primary {
@@ -336,6 +357,7 @@ ul {
   padding: 10px 32px;
   min-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
 }
 
 .button.primary:hover .button.primary:focus {
@@ -368,12 +390,11 @@ ul {
 }
 
 .container.portfolio-filter {
-  margin-bottom: 50px;
 }
 
 .filter {
   display: flex;
-  margin-left: 280px;
+  margin-bottom: 50px;
 }
 
 .filter .filter-item + .filter-item {
