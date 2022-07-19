@@ -317,12 +317,18 @@ img {
   padding-bottom: 60px;
 }
 
-.contacts-nav .cont-nav-footer {
+.page-footer .contacts-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-nav-footer {
   color: var(--address-txt-contacts);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 9px;
 }
 
 .cont-nav-footer:hover,
@@ -333,6 +339,7 @@ img {
 .address {
   font-style: inherit;
   color: var(--address-txt);
+  margin-top: 20px;
 }
 
 /* Button */
@@ -389,12 +396,14 @@ img {
   background-color: var(--primary-bg-color);
 }
 
-.container.portfolio-filter {
-}
+/* Filter */
 
 .filter {
   display: flex;
   margin-bottom: 50px;
+  width: 612px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .filter .filter-item + .filter-item {
