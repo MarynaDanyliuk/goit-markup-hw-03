@@ -131,6 +131,10 @@ img {
   margin-left: 93px;
 }
 
+.site-nav .link {
+  display: inline-block;
+}
+
 .contacts-nav {
   display: flex;
   margin-left: auto;
@@ -189,7 +193,7 @@ img {
 
 /* Hero */
 
-.hero-section {
+.hero-section.no-padding {
   background-color: var(--accent-bg-color);
 
   text-align: center;
@@ -220,18 +224,19 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 }
 
 /* Section */
 
-.section {
+.section,
+.section.team {
   margin-top: 0;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.section.no-paddind {
+.section.no-padding {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -248,9 +253,25 @@ img {
   text-align: center;
 }
 
-/* Features */
+/* Benefits */
 
-.features-list .title {
+.benefit-list,
+.projects-list,
+.team-list {
+  display: flex;
+}
+
+.benefit-item {
+  width: 270px;
+}
+
+.benefit-item:not(:last-child),
+.projects-item:not(:last-child),
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefit-list .title {
   color: var(--title-txt-color);
   font-weight: 700;
   font-size: 14px;
@@ -260,7 +281,7 @@ img {
   margin-bottom: 10px;
 }
 
-.features-list .description {
+.benefit-list .description {
   margin-top: 0;
 
   color: var(--primary-txt-color);
@@ -268,18 +289,11 @@ img {
   line-height: 1.71;
 }
 
-.features-list,
-.projects-list,
-.team-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.features-item {
-  width: 270px;
-}
-
 /* Team */
+
+.section.team {
+  background-color: var(--team-bg-color);
+}
 
 .team-list .title {
   color: var(--title-txt-color);
@@ -287,6 +301,7 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 30px;
 }
 
 .team-list .description {
@@ -294,16 +309,18 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-.card {
+.team-card {
   background-color: var(--team-card-bg-color);
   width: 270px;
-  height: 368px;
-}
+  /* height: 368px; */
 
-.section.team {
-  background-color: var(--team-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
