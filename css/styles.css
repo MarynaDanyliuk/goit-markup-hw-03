@@ -336,13 +336,6 @@ img {
 
 .page-footer {
   background-color: var(--accent-bg-color);
-}
-
-/* .page-footer .container {
-  
-} */
-
-.footer-info {
   padding-top: 60px;
   padding-bottom: 60px;
 }
