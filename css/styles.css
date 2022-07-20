@@ -51,6 +51,11 @@ img {
   display: block;
 }
 
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 /* #212121 цвет заголовков */
 /* #757575 цвет основного текста */
 /* #FFFFFF цвет Hero */
@@ -122,8 +127,8 @@ img {
 .page-header .container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 }
 
 .site-nav {
@@ -131,8 +136,11 @@ img {
   margin-left: 93px;
 }
 
-.site-nav .link {
+.site-nav .link,
+.contacts-nav .link {
   display: inline-block;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .contacts-nav {
@@ -200,9 +208,7 @@ img {
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-
   color: var(--hero-txt-color);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -222,7 +228,7 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 }
 
 /* Section */
@@ -417,9 +423,10 @@ img {
 .filter {
   display: flex;
   margin-bottom: 50px;
-  width: 612px;
+  justify-content: center;
+  /* width: 612px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
 .filter .filter-item + .filter-item {
