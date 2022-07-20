@@ -51,10 +51,10 @@ img {
   display: block;
 }
 
-header {
+/* header {
   padding-top: 24px;
   padding-bottom: 25px;
-}
+} */
 
 /* #212121 цвет заголовков */
 /* #757575 цвет основного текста */
@@ -100,6 +100,8 @@ header {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -199,28 +201,6 @@ header {
   color: var(--accent-txt-color);
 }
 
-/* Hero */
-
-.hero-section {
-  background-color: var(--accent-bg-color);
-  text-align: center;
-}
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  color: var(--hero-txt-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.hero-section .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 /* Container */
 
 .container {
@@ -255,6 +235,28 @@ header {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+/* Hero */
+
+.hero-section {
+  background-color: var(--accent-bg-color);
+  text-align: center;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--hero-txt-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-section .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* Benefits */
