@@ -254,7 +254,7 @@ img {
   text-transform: uppercase;
 }
 
-.hero-section .container {
+.hero-info {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -336,7 +336,11 @@ img {
   background-color: var(--accent-bg-color);
 }
 
-.page-footer .container {
+/* .page-footer .container {
+  
+} */
+
+.footer-info {
   padding-top: 60px;
   padding-bottom: 60px;
 }
